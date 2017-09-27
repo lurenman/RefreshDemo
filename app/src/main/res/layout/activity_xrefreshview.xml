@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XRefreshView"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.andview.refreshview.XRefreshView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:xrefreshview="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rv_refreshView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            xrefreshview:isHeightMatchParent="true"
+            xrefreshview:isWidthMatchParent="true">
+
+            <ListView
+                android:id="@+id/lv_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#f2f2f2"
+                android:dividerHeight="8dp"
+                >
+            </ListView>
+        </com.andview.refreshview.XRefreshView>
+
+    </LinearLayout>
+
+</LinearLayout>
